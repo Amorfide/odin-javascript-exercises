@@ -1,7 +1,7 @@
 const convertToCelsius = function(fh) {
-  let c = Math.round(((fh - 32) * 5/9)*10)/10; 
+  let cs = Math.round(((fh - 32) * 5/9)*10)/10; 
     
-  return c;
+  return cs;
 
 };
 
