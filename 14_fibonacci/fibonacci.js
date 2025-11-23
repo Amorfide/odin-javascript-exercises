@@ -4,13 +4,18 @@ const fibonacci = function(term) {
     let fibo = 0;
 
     const sequence = [0]
-
-    for(let i = 0; i < term; i++){
-        sequence.push(termTwo);
-        fibo = termOne + termTwo;
-        termOne = termTwo;
-        termTwo = fibo;
-    }
+    if(term < 0){
+        return "OOPS";
+    }else{
+        for(let i = 0; i < term; i++){
+            
+                sequence.push(termTwo);
+                fibo = termOne + termTwo;
+                termOne = termTwo;
+                termTwo = fibo;
+            }
+        }
+        
     return sequence[term];
     
 };
